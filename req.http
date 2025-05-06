@@ -1,0 +1,77 @@
+### POST user
+POST localhost:8080/users
+content-type: application/json
+
+{
+  "name" : "Petr"
+}
+
+### POST user
+POST localhost:8080/users
+content-type: application/json
+
+{
+  "name" : "Ivan"
+}
+
+### POST user
+POST localhost:8080/users
+content-type: application/json
+
+{
+  "name" : "Yakov"
+}
+
+### GET user by id
+GET localhost:8080/users/2
+
+### DELETE user by id
+DELETE localhost:8080/users/1
+
+
+### PUT user
+PUT localhost:8080/users
+content-type: application/json
+
+{
+  "id" : 2,
+  "name" : "demidov"
+}
+
+### Post subscription
+POST localhost:8080/subscriptions/2
+content-type: application/json
+
+{
+  "rating" : 1
+}
+
+### Post subscription
+POST localhost:8080/subscriptions/2
+content-type: application/json
+
+{
+  "rating" : 5
+}
+
+### Post subscription
+POST localhost:8082/subscriptions/2
+content-type: application/json
+
+{
+  "rating" : 10
+}
+
+### Post subscription
+POST localhost:8080/subscriptions/2
+content-type: application/json
+
+{
+  "rating" : 100
+}
+
+### GET subscriptions by user_id
+GET localhost:8080/subscriptions/2
+
+### GET TOP 3 subscriptions
+GET localhost:8080/subscriptions
